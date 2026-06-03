@@ -1,19 +1,20 @@
+
 // --------------------------------------------------
-// SCREEN 12
+// SCREEN 15
 // --------------------------------------------------
-function drawScreen12() {
+function drawScreen15() {
 
   // BACKGROUND
-  background("black");
+  background("Green");
 
   // --------------------------------------------------
   // TITLE
   // --------------------------------------------------
-  fill("White");
+  fill("Black");
   noStroke();
   textAlign(CENTER, CENTER);
   textSize(42);
 
-  text("You've Entered the...", width / 2, 120);
-text("Snake Pit Disaster!", width / 2, 320);
+  text("Congratulations!", width / 2, 120);
+text("You're the King of the Jungle!", width / 2, 320);
 }

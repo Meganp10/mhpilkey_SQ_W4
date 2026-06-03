@@ -1,7 +1,7 @@
 // --------------------------------------------------
-// SCREEN 12
+// SCREEN 16
 // --------------------------------------------------
-function drawScreen12() {
+function drawScreen16() {
 
   // BACKGROUND
   background("black");
@@ -14,6 +14,6 @@ function drawScreen12() {
   textAlign(CENTER, CENTER);
   textSize(42);
 
-  text("You've Entered the...", width / 2, 120);
-text("Snake Pit Disaster!", width / 2, 320);
+  text("You've Entered the...!", width / 2, 120);
+text("Endless Climb!", width / 2, 320);
 }

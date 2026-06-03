@@ -50,6 +50,45 @@ function draw() {
   else if (gameScreen === 8) {
     drawScreen8();
   }
+
+  else if (gameScreen === 9) {
+  drawScreen9();
+}
+
+
+  else if (gameScreen === 10) {
+  drawScreen10();
+}
+
+
+  else if (gameScreen === 11) {
+  drawScreen11();
+}
+
+
+  else if (gameScreen === 12) {
+  drawScreen12();
+}
+
+
+  else if (gameScreen === 13) {
+  drawScreen13();
+}
+
+
+  else if (gameScreen === 14) {
+  drawScreen14();
+}
+
+
+  else if (gameScreen === 15) {
+  drawScreen15();
+}
+
+
+  else if (gameScreen === 16) {
+  drawScreen16();
+}
 }
 
 // --------------------------------------------------
