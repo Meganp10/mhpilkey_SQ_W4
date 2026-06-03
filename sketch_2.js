@@ -1,22 +1,28 @@
+
+
 // --------------------------------------------------
 // SCREEN 2
 // --------------------------------------------------
 function drawScreen2() {
 
-  background("lightgreen");
+  // BACKGROUND
+  background("green");
 
+  // --------------------------------------------------
   // TITLE
+  // --------------------------------------------------
   fill("white");
+  noStroke();
   textAlign(CENTER, CENTER);
   textSize(42);
 
-  text("Pick an option", width / 2, 120);
+  text("Pick an Option", width / 2, 120);
 
   // --------------------------------------------------
   // WATERFALL BUTTON
   // --------------------------------------------------
 
-  // hover effect
+  // Hover effect
   if (
     mouseX > 120 &&
     mouseX < 370 &&
@@ -33,9 +39,9 @@ function drawScreen2() {
 
   rect(120, 250, 250, 100, 20);
 
+  // Button text
   fill("black");
   noStroke();
-
   textSize(22);
 
   text(
@@ -48,7 +54,7 @@ function drawScreen2() {
   // MONKEY BRIDGE BUTTON
   // --------------------------------------------------
 
-  // hover effect
+  // Hover effect
   if (
     mouseX > 430 &&
     mouseX < 680 &&
@@ -65,9 +71,9 @@ function drawScreen2() {
 
   rect(430, 250, 250, 100, 20);
 
+  // Button text
   fill("black");
   noStroke();
-
   textSize(22);
 
   text(
@@ -78,11 +84,13 @@ function drawScreen2() {
 }
 
 // --------------------------------------------------
-// SCREEN 2 BUTTON NAVIGATION
+// SCREEN 2 BUTTON CLICKS
 // --------------------------------------------------
 function screen2MousePressed() {
 
+  // --------------------------------------------------
   // WATERFALL BUTTON
+  // --------------------------------------------------
   if (
     mouseX > 120 &&
     mouseX < 370 &&
@@ -90,11 +98,13 @@ function screen2MousePressed() {
     mouseY < 350
   ) {
 
-    // GO TO SCREEN 8
-    gameScreen = 8;
+    // GO TO SCREEN 3
+    gameScreen = 3;
   }
 
+  // --------------------------------------------------
   // MONKEY BRIDGE BUTTON
+  // --------------------------------------------------
   if (
     mouseX > 430 &&
     mouseX < 680 &&
@@ -102,7 +112,8 @@ function screen2MousePressed() {
     mouseY < 350
   ) {
 
-    // GO TO SCREEN 9
-    gameScreen = 9;
+    // GO TO SCREEN 4
+    gameScreen = 4;
   }
 }
+
