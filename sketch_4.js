@@ -87,7 +87,7 @@ function drawScreen4() {
 function screen4MousePressed() {
 
   // --------------------------------------------------
-  // WATERFALL BUTTON
+  // DARK CAVE BUTTON
   // --------------------------------------------------
   if (
     mouseX > 120 &&
@@ -96,12 +96,12 @@ function screen4MousePressed() {
     mouseY < 350
   ) {
 
-    // GO TO SCREEN 3
-    gameScreen = 3;
+    // GO TO SCREEN 7
+    gameScreen = 7;
   }
 
   // --------------------------------------------------
-  // MONKEY BRIDGE BUTTON
+  // CLIFSIDE BUTTON
   // --------------------------------------------------
   if (
     mouseX > 430 &&
@@ -110,8 +110,8 @@ function screen4MousePressed() {
     mouseY < 350
   ) {
 
-    // GO TO SCREEN 4
-    gameScreen = 4;
+    // GO TO SCREEN 8
+    gameScreen = 8;
   }
 }
 

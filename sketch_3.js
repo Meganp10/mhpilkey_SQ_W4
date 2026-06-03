@@ -87,6 +87,7 @@ function drawScreen3() {
 // --------------------------------------------------
 function screen3MousePressed() {
 
+  
   // --------------------------------------------------
   // WATERFALL BUTTON
   // --------------------------------------------------
@@ -97,7 +98,7 @@ function screen3MousePressed() {
     mouseY < 350
   ) {
 
-    // GO TO SCREEN 3
+    // GO TO SCREEN 5
     gameScreen = 5;
   }
 
@@ -111,8 +112,8 @@ function screen3MousePressed() {
     mouseY < 350
   ) {
 
-    // GO TO SCREEN 4
-    gameScreen = 4;
+    // GO TO SCREEN 6
+    gameScreen = 6;
   }
 }
 

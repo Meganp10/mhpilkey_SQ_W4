@@ -30,6 +30,26 @@ function draw() {
   else if (gameScreen === 4) {
     drawScreen4();
   }
+
+   // SCREEN 5
+  else if (gameScreen === 5) {
+    drawScreen5();
+  }
+
+   // SCREEN 6
+  else if (gameScreen === 6) {
+    drawScreen6();
+  }
+
+   // SCREEN 7
+  else if (gameScreen === 7) {
+    drawScreen7();
+  }
+
+   // SCREEN 8
+  else if (gameScreen === 8) {
+    drawScreen8();
+  }
 }
 
 // --------------------------------------------------
@@ -122,7 +142,38 @@ function mousePressed() {
   if (gameScreen === 1) {
     screen1MousePressed();
   }
+
+  // SCREEN 3 BUTTONS
+  else if (gameScreen === 3) {
+    screen3MousePressed();
+  }
+
+  // SCREEN 4 BUTTONS
+  else if (gameScreen === 4) {
+    screen4MousePressed();
+  }
+
+  // SCREEN 5 BUTTONS
+  else if (gameScreen === 5) {
+    screen5MousePressed();
+  }
+
+  // SCREEN 6 BUTTONS
+  else if (gameScreen === 6) {
+    screen6MousePressed();
+  }
+
+  // SCREEN 7 BUTTONS
+  else if (gameScreen === 7) {
+    screen7MousePressed();
+  }
+
+  // SCREEN 8 BUTTONS
+  else if (gameScreen === 8) {
+    screen8MousePressed();
+  }
 }
+  
 
 // --------------------------------------------------
 // SCREEN 1 BUTTON CLICKS
