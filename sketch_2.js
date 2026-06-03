@@ -10,7 +10,7 @@ function drawScreen2() {
   textAlign(CENTER, CENTER);
   textSize(42);
 
-  text("Pick an Option", width / 2, 120);
+  text("Pick an option", width / 2, 120);
 
   // --------------------------------------------------
   // WATERFALL BUTTON
@@ -39,7 +39,7 @@ function drawScreen2() {
   textSize(22);
 
   text(
-    "Climb Beside\nThe Waterfall",
+    "Jungle Vine",
     245,
     300
   );
@@ -71,7 +71,7 @@ function drawScreen2() {
   textSize(22);
 
   text(
-    "Swim Across\nBroken Monkey Bridge",
+    "Safari Car",
     555,
     300
   );
