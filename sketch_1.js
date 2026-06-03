@@ -1,3 +1,4 @@
+
 // --------------------------------------------------
 // SCREEN CONTROL
 // --------------------------------------------------
@@ -15,56 +16,50 @@ function setup() {
 // --------------------------------------------------
 function draw() {
 
-  // SHOW SCREEN 1
+  // SCREEN 1
   if (gameScreen === 1) {
-    drawStartScreen();
+    drawScreen1();
   }
 
-  // SHOW SCREEN 2
-  else if (gameScreen === 2) {
-    drawScreen2();
+  // SCREEN 3
+  else if (gameScreen === 3) {
+    drawScreen3();
   }
 
-  // SHOW SCREEN 8
-  else if (gameScreen === 8) {
-    drawScreen8();
-  }
-
-  // SHOW SCREEN 9
-  else if (gameScreen === 9) {
-    drawScreen9();
+  // SCREEN 4
+  else if (gameScreen === 4) {
+    drawScreen4();
   }
 }
 
 // --------------------------------------------------
-// START SCREEN
+// SCREEN 1
 // --------------------------------------------------
-function drawStartScreen() {
+function drawScreen1() {
 
-  background("pink");
+  // BACKGROUND
+  background("green");
 
+  // TITLE
   fill("white");
+  noStroke();
   textAlign(CENTER, CENTER);
+  textSize(42);
 
-  textSize(45);
-  text("Jungle Over It", width / 2, 150);
+  text("Pick an Option", width / 2, 120);
 
-  textSize(22);
+  // --------------------------------------------------
+  // JUNGLE VINE BUTTON
+  // --------------------------------------------------
 
-  text(
-    "Press START to begin",
-    width / 2,
-    220
-  );
-
-  // START BUTTON
+  // Hover effect
   if (
-    mouseX > 300 &&
-    mouseX < 500 &&
-    mouseY > 350 &&
-    mouseY < 420
+    mouseX > 120 &&
+    mouseX < 370 &&
+    mouseY > 250 &&
+    mouseY < 350
   ) {
-    fill("lightgreen");
+    fill("yellow");
   } else {
     fill("white");
   }
@@ -72,36 +67,89 @@ function drawStartScreen() {
   stroke("black");
   strokeWeight(3);
 
-  rect(300, 350, 200, 70, 20);
+  rect(120, 250, 250, 100, 20);
 
+  // Button text
   fill("black");
   noStroke();
+  textSize(22);
 
-  textSize(30);
+  text(
+    "Jungle Vine",
+    245,
+    300
+  );
 
-  text("START", 400, 385);
+  // --------------------------------------------------
+  // SAFARI CAR BUTTON
+  // --------------------------------------------------
+
+  // Hover effect
+  if (
+    mouseX > 430 &&
+    mouseX < 680 &&
+    mouseY > 250 &&
+    mouseY < 350
+  ) {
+    fill("yellow");
+  } else {
+    fill("white");
+  }
+
+  stroke("black");
+  strokeWeight(3);
+
+  rect(430, 250, 250, 100, 20);
+
+  // Button text
+  fill("black");
+  noStroke();
+  textSize(22);
+
+  text(
+    "Safari Car",
+    555,
+    300
+  );
 }
 
 // --------------------------------------------------
-// BUTTON CLICKS
+// MOUSE CLICKS
 // --------------------------------------------------
 function mousePressed() {
 
-  // START BUTTON
+  // SCREEN 1 BUTTONS
+  if (gameScreen === 1) {
+    screen1MousePressed();
+  }
+}
+
+// --------------------------------------------------
+// SCREEN 1 BUTTON CLICKS
+// --------------------------------------------------
+function screen1MousePressed() {
+
+  // JUNGLE VINE BUTTON
   if (
-    gameScreen === 1 &&
-    mouseX > 300 &&
-    mouseX < 500 &&
-    mouseY > 350 &&
-    mouseY < 420
+    mouseX > 120 &&
+    mouseX < 370 &&
+    mouseY > 250 &&
+    mouseY < 350
   ) {
 
-    // GO TO SCREEN 2
-    gameScreen = 2;
+    // GO TO SCREEN 3
+    gameScreen = 3;
   }
 
-  // SCREEN 2 BUTTONS
-  if (gameScreen === 2) {
-    screen2MousePressed();
+  // SAFARI CAR BUTTON
+  if (
+    mouseX > 430 &&
+    mouseX < 680 &&
+    mouseY > 250 &&
+    mouseY < 350
+  ) {
+
+    // GO TO SCREEN 4
+    gameScreen = 4;
   }
 }
